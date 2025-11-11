@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <!-- Titre -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TC App"
+        android:textSize="28sp"
+        android:textColor="#333333"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="60dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:padding="12dp" />
+    <EditText
+        android:id="@+id/editdate"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Date de naissance"
+        android:inputType="text"
+        android:padding="12dp" />
+    <EditText
+        android:id="@+id/editphone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editdate"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Phone number"
+        android:inputType="text"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editphone"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="12dp" />
+
+
+    <Button
+        android:id="@+id/btnlogin1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editPassword"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Creation nouvelle compte"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progbar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@id/btnlogin1"
+        android:layout_marginTop="30dp"
+        android:indeterminate="true"
+        android:indeterminateTint="#0D47A1"
+    android:background="#BBDEFB" />
+
+
+</RelativeLayout>
